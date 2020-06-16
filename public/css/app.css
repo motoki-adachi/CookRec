@@ -619,20 +619,24 @@ ul li {
 }
 
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+header {
+  border-bottom: 1px solid #787878;
+}
+
 .header {
-  background-color: #abdbf7;
-  height: 50px;
+  width: 1000px;
+  margin: 0 auto;
+  height: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid #000;
 }
 
 .header__left {
-  line-height: 50px;
+  line-height: 35px;
   margin-left: 15px;
 }
 
@@ -643,7 +647,11 @@ ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  line-height: 50px;
+  line-height: 35px;
   height: 50px;
+}
+
+.header__right--contents {
+  margin-right: 15px;
 }
 /*# sourceMappingURL=app.css.map */

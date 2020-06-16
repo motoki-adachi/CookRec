@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,22 +20,27 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+
 <body>
-    <header class="header">
-        <div class="header__left">
-            <a href="#">サービス一覧</a>
-        </div>
-        <div class="header__right">
-            <div class="header__right--contents">
-                <a href="#">新規登録</a>
+    <header>
+        <div class="header">
+            <div class="header__left">
+                <a href="#">サービス一覧</a>
             </div>
-            <div class="header__right--contents">
-                <a href="#">ログイン</a>
+            <div class="header__right">
+                <div class="header__right--contents">
+                    <a href="#">新規登録</a>
+                </div>
+                <div class="header__right--contents">
+                    <a href="#">ログイン</a>
+                </div>
             </div>
+
         </div>
     </header>
     <div class="main">
         @yield('content')
     </div>
 </body>
+
 </html>

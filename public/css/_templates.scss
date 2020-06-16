@@ -1,17 +1,24 @@
+header{
+  border-bottom:1px solid rgb(120, 120, 120) ;
+}
+
 .header{
-  background-color: #abdbf7;
-  height: 50px;
+  width: 1000px;
+  margin: 0 auto;
+  height: 35px;
   display: flex;
   justify-content: space-between;
-  border-bottom:1px solid #000 ;
   &__left{
-    line-height: 50px;
+    line-height: 35px;
     margin-left: 15px;
   }
   &__right{
     display: flex;
     justify-content: space-between;
-    line-height: 50px;
+    line-height: 35px;
     height: 50px;
+    &--contents{
+      margin-right: 15px;
+    }
   }
 }
