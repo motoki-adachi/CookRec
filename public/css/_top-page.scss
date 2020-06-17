@@ -1,0 +1,37 @@
+.main{
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgrey;
+  .top-wrapper{border-bottom: 1px solid #000;
+    height: 100px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    &__left{
+      width: 20%;
+      &--logo{
+        font-size: 40px;
+        color: blue;
+      }
+    }
+    &__center{
+      width: 30%;
+      &--search{
+        width: 400px;
+        .recipe-search{
+          width: 70%;
+        }
+      }
+      &--content{
+        font-size: 13px;
+      }
+    }
+    &__right{
+      width: 30%;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

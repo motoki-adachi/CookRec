@@ -624,7 +624,7 @@ header {
 }
 
 .header {
-  width: 1000px;
+  width: 70%;
   margin: 0 auto;
   height: 35px;
   display: -webkit-box;
@@ -653,5 +653,60 @@ header {
 
 .header__right--contents {
   margin-right: 15px;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgrey;
+}
+
+.main .top-wrapper {
+  border-bottom: 1px solid #000;
+  height: 100px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .top-wrapper__left {
+  width: 20%;
+}
+
+.main .top-wrapper__left--logo {
+  font-size: 40px;
+  color: blue;
+}
+
+.main .top-wrapper__center {
+  width: 30%;
+}
+
+.main .top-wrapper__center--search {
+  width: 400px;
+}
+
+.main .top-wrapper__center--search .recipe-search {
+  width: 70%;
+}
+
+.main .top-wrapper__center--content {
+  font-size: 13px;
+}
+
+.main .top-wrapper__right {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=app.css.map */
