@@ -657,8 +657,8 @@ header {
 
 .main {
   width: 100vw;
-  height: 100vh;
-  background-color: lightgrey;
+  height: 100%;
+  background-color: #c1eafa;
 }
 
 .main .top-wrapper {
@@ -666,7 +666,7 @@ header {
   height: 100px;
   width: 70%;
   margin: 0 auto;
-  padding: 30px;
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -708,5 +708,30 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main .main-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-wrapper__left {
+  width: 65%;
+  height: 100vh;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.main .main-wrapper__right {
+  width: 35%;
+  height: 100vh;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: #fff;
 }
 /*# sourceMappingURL=app.css.map */

@@ -1,12 +1,12 @@
 .main{
   width: 100vw;
-  height: 100vh;
-  background-color: lightgrey;
+  height: 100%;
+  background-color: rgb(193, 234, 250);
   .top-wrapper{border-bottom: 1px solid #000;
     height: 100px;
     width: 70%;
     margin: 0 auto;
-    padding: 30px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     &__left{
@@ -32,6 +32,27 @@
       width: 30%;
       display: flex;
       align-items: center;
+    }
+  }
+
+  .main-wrapper{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    &__left{
+      width: 65%;
+      height: 100vh;
+      margin: 10px;
+      border-radius: 15px;
+      background-color: #fff;
+    }
+    &__right{
+      width: 35%;
+      height: 100vh;
+      margin: 10px;
+      border-radius: 15px;
+      background-color: #fff;
     }
   }
 }

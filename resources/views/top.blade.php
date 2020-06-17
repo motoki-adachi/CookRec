@@ -29,4 +29,21 @@
   </div>
 
 </div>
+
+<div class="main-wrapper">
+  <div class="main-wrapper__left">
+    未定
+  </div>
+  <div class="main-wrapper__right">
+    <div class="main-wrapper__right--category">
+      カテゴリー別のリンク
+    </div>
+    <div class="main-wrapper__right--opinion">
+      ご意見・ご要望
+    </div>
+    <div class="main-wrapper__right--contact">
+      問合せフォームへのリンク
+    </div>
+  </div>
+</div>
 @endsection
