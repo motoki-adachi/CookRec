@@ -619,6 +619,11 @@ ul li {
 }
 
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   border-bottom: 1px solid #787878;
 }
@@ -657,7 +662,7 @@ header {
 
 .main {
   width: 100vw;
-  height: 100%;
+  height: 1500px;
   background-color: #c1eafa;
 }
 
@@ -711,6 +716,7 @@ header {
 }
 
 .main .main-wrapper {
+  height: auto;
   width: 70%;
   margin: 0 auto;
   padding-top: 30px;
@@ -721,17 +727,68 @@ header {
 
 .main .main-wrapper__left {
   width: 65%;
-  height: 100vh;
+  height: 100%;
   margin: 10px;
   border-radius: 15px;
   background-color: #fff;
 }
 
+.main .main-wrapper__left__box {
+  height: 350px;
+  margin-bottom: 20px;
+}
+
+.main .main-wrapper__left__box--icon {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.main .main-wrapper__left__box--contents {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 15px;
+}
+
+.main .main-wrapper__left__box--contents--item {
+  cursor: pointer;
+  height: 90%;
+  width: 30%;
+  border: 1px solid #41a1fa;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.main .main-wrapper__left__box--link {
+  float: right;
+  margin: 0 10px 20px 0;
+}
+
 .main .main-wrapper__right {
   width: 35%;
-  height: 100vh;
+  height: 1000px;
   margin: 10px;
   border-radius: 15px;
   background-color: #fff;
+}
+
+.main .main-wrapper__right--category {
+  background-color: #8686b3;
+  height: 70%;
+}
+
+.main .main-wrapper__right--opinion {
+  background-color: #1616df;
+  height: 20%;
+}
+
+.main .main-wrapper__right--contact {
+  background-color: #bb56a2;
+  height: 10%;
 }
 /*# sourceMappingURL=app.css.map */

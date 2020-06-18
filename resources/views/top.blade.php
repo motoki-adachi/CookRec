@@ -32,7 +32,116 @@
 
 <div class="main-wrapper">
   <div class="main-wrapper__left">
-    未定
+    <!-- #######################################新着############################################## -->
+    <div class="main-wrapper__left__box">
+      <p class="main-wrapper__left__box--icon">新着レシピ</p>
+      <div class="main-wrapper__left__box--contents">
+        <div class="main-wrapper__left__box--contents--item">
+          <div class="image">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462?
+            ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80" alt="">
+          </div>
+          <p class="title">タイトル</p>
+          <p class="user">作成者</p>
+        </div>
+        <div class="main-wrapper__left__box--contents--item">
+          <div class="image">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462?
+            ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80" alt="">
+          </div>
+          <p class="title">タイトル</p>
+          <p class="user">作成者</p>
+        </div>
+        <div class="main-wrapper__left__box--contents--item">
+          <div class="image">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462?
+            ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80" alt="">
+          </div>
+          <p class="title">タイトル</p>
+          <p class="user">作成者</p>
+        </div>
+      </div>
+
+
+      <div class="main-wrapper__left__box--link">
+        <a href="#">もっと見る→</a>
+      </div>
+    </div>
+    <!-- #############################################新着ここまで######################################################## -->
+    <!-- ############################################今週のおすすめ############################################################### -->
+    <div class="main-wrapper__left__box">
+      <div class="main-wrapper__left__box">
+        <p class="main-wrapper__left__box--icon">今週のオススメ</p>
+        <div class="main-wrapper__left__box--contents">
+          <div class="main-wrapper__left__box--contents--item">
+            <div class="image">
+              <img src="https://images.unsplash.com/photo-1558030006-450675393462?
+            ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80" alt="">
+            </div>
+            <p class="title">タイトル</p>
+            <p class="user">作成者</p>
+          </div>
+          <div class="main-wrapper__left__box--contents--item">
+            <div class="image">
+              <img src="https://images.unsplash.com/photo-1558030006-450675393462?
+            ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80" alt="">
+            </div>
+            <p class="title">タイトル</p>
+            <p class="user">作成者</p>
+          </div>
+          <div class="main-wrapper__left__box--contents--item">
+            <div class="image">
+              <img src="https://images.unsplash.com/photo-1558030006-450675393462?
+            ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80" alt="">
+            </div>
+            <p class="title">タイトル</p>
+            <p class="user">作成者</p>
+          </div>
+        </div>
+        <div class="main-wrapper__left__box--link">
+          <a href="#">もっと見る→</a>
+        </div>
+      </div>
+    </div>
+    <!-- ############################################今週のおすすめここまで############################################################### -->
+    <!-- ############################################友達############################################################### -->
+
+    <div class="main-wrapper__left__box">
+      <div class="main-wrapper__left__box">
+        <p class="main-wrapper__left__box--icon">フレンドの新着</p>
+        <div class="main-wrapper__left__box--contents">
+          <div class="main-wrapper__left__box--contents--item">
+            <div class="image">
+              <img src="https://images.unsplash.com/photo-1558030006-450675393462?
+            ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80" alt="">
+            </div>
+            <p class="title">タイトル</p>
+            <p class="user">作成者</p>
+          </div>
+          <div class="main-wrapper__left__box--contents--item">
+            <div class="image">
+              <img src="https://images.unsplash.com/photo-1558030006-450675393462?
+            ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80" alt="">
+            </div>
+            <p class="title">タイトル</p>
+            <p class="user">作成者</p>
+          </div>
+          <div class="main-wrapper__left__box--contents--item">
+            <div class="image">
+              <img src="https://images.unsplash.com/photo-1558030006-450675393462?
+            ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80" alt="">
+            </div>
+            <p class="title">タイトル</p>
+            <p class="user">作成者</p>
+          </div>
+        </div>
+        <div class="main-wrapper__left__box--link">
+          <a href="#">もっと見る→</a>
+        </div>
+      </div>
+    </div>
+    <!-- ############################################友達ここまで############################################################### -->
+
   </div>
   <div class="main-wrapper__right">
     <div class="main-wrapper__right--category">
@@ -40,9 +149,14 @@
     </div>
     <div class="main-wrapper__right--opinion">
       ご意見・ご要望
+      <form action="#">
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+        <input type="subnit" value="送信する">
+      </form>
     </div>
     <div class="main-wrapper__right--contact">
       問合せフォームへのリンク
+      <a href="#">お問い合わせ詳細</a>
     </div>
   </div>
 </div>
