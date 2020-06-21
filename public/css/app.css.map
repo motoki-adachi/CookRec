@@ -5,7 +5,8 @@
         "app.scss",
         "_reset.scss",
         "_templates.scss",
-        "_top-page.scss"
+        "_top-page.scss",
+        "_auth.scss"
     ],
     "names": [],
     "file": "app.css"

@@ -24,7 +24,7 @@
       <a href="#">保存したレシピ一覧に飛ぶ</a>
     </div>
     <div class="top-wrapper__right--create">
-      <a href="#">レシピ作成画面に飛ぶ</a>
+      <a href="{{ route('menus.create') }}">レシピ作成画面に飛ぶ</a>
     </div>
   </div>
 
@@ -35,34 +35,17 @@
     <!-- #######################################新着############################################## -->
     <div class="main-wrapper__left__box">
       <p class="main-wrapper__left__box--icon">新着レシピ</p>
+      @foreach($menus as $menu)
       <div class="main-wrapper__left__box--contents">
         <div class="main-wrapper__left__box--contents--item">
           <div class="image">
-            <img src="https://images.unsplash.com/photo-1558030006-450675393462?
-            ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80" alt="">
+            <img src="{{ $menu->image }}" alt="">
           </div>
-          <p class="title">タイトル</p>
-          <p class="user">作成者</p>
-        </div>
-        <div class="main-wrapper__left__box--contents--item">
-          <div class="image">
-            <img src="https://images.unsplash.com/photo-1558030006-450675393462?
-            ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80" alt="">
-          </div>
-          <p class="title">タイトル</p>
-          <p class="user">作成者</p>
-        </div>
-        <div class="main-wrapper__left__box--contents--item">
-          <div class="image">
-            <img src="https://images.unsplash.com/photo-1558030006-450675393462?
-            ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80" alt="">
-          </div>
-          <p class="title">タイトル</p>
+          <p class="title">{{ $menu->title }}</p>
           <p class="user">作成者</p>
         </div>
       </div>
-
-
+      @endforeach
       <div class="main-wrapper__left__box--link">
         <a href="#">もっと見る→</a>
       </div>

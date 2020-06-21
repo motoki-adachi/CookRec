@@ -29,10 +29,10 @@
             </div>
             <div class="header__right">
                 <div class="header__right--contents">
-                    <a href="#">新規登録</a>
+                    <a href="{{ route('register') }}">新規登録</a>
                 </div>
                 <div class="header__right--contents">
-                    <a href="#">ログイン</a>
+                    <a href="{{ route('login') }}">ログイン</a>
                 </div>
             </div>
 
