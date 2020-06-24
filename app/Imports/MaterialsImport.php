@@ -2,7 +2,7 @@
 
 namespace App\Imports;
 
-use App\Material;
+use App\Category;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class MaterialsImport implements ToModel
@@ -14,9 +14,10 @@ class MaterialsImport implements ToModel
     */
     public function model(array $row)
     {
-        return new Material([
+        return new Category([
             'id'     => $row[0],
             'name'    => $row[1], 
+            // 'category_id'    => $row[2], 
         ]);
     }
 }

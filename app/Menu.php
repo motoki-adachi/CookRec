@@ -18,4 +18,9 @@ class Menu extends Model
     {
         return $this->belongsTo('App\User');
     }
+
+    public function materials()
+    {
+        return $this->belongsToMany('App\Material', 'menu_material', 'menu_id', 'material_id');
+    }
 }

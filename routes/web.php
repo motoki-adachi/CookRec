@@ -17,4 +17,4 @@ Route::get('/', 'MenusController@top')->name('top');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('menus', 'MenusController', ['only' => ['store', 'create']]);
-// Route::get('/materials/import','MaterialsController@import');
+Route::get('/categories/import','CategoriesController@import');
