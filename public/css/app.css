@@ -622,6 +622,7 @@ ul li {
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 header {
@@ -761,7 +762,8 @@ header {
   width: 30%;
   border: 1px solid #41a1fa;
   margin: 15px;
-  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 4px gray;
+          box-shadow: 2px 2px 4px gray;
 }
 
 .main .main-wrapper__left__box--link {
@@ -778,8 +780,26 @@ header {
 }
 
 .main .main-wrapper__right--category {
-  background-color: #8686b3;
-  height: 70%;
+  height: 700px;
+  overflow: scroll;
+}
+
+.main .main-wrapper__right--category--title {
+  text-align: center;
+  margin: 8px;
+}
+
+.main .main-wrapper__right--category--contents {
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.main .main-wrapper__right--category--contents--sub {
+  font-size: 15px;
+}
+
+.main .main-wrapper__right--category--contents--sub a {
+  color: #77f3e9;
 }
 
 .main .main-wrapper__right--opinion {

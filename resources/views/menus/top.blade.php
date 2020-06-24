@@ -128,7 +128,22 @@
   </div>
   <div class="main-wrapper__right">
     <div class="main-wrapper__right--category">
-      カテゴリー別のリンク
+      @foreach($categories as $category)
+        <p class="main-wrapper__right--category--title"><a href="#">{{ $category->name }}</a></p>
+        <div class="main-wrapper__right--category--contents">
+          @foreach($sub_categories as $sub_category)
+            @foreach($sub_category as $data)
+              @if($data->category_id == $category->id)
+              <div class="main-wrapper__right--category--contents--sub">
+                <div class="main-wrapper__right--category--contents--sub--item">
+                  <a href="#">{{ $data->name }}</a>
+                </div>
+              </div>
+              @endif
+            @endforeach
+          @endforeach
+        </div>
+      @endforeach
     </div>
     <div class="main-wrapper__right--opinion">
       ご意見・ご要望
