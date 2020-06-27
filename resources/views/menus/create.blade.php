@@ -1,9 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<form action="#">
+<form action="{{ route('menus.store') }}" method="post" enctype="multipart/form-data">
 
-  <input type="hidden" value="{{ Auth::user()->id }}">
+  <!-- <input type="hidden" value="{{ Auth::user()->id }}"> -->
+
+  @csrf
 
   <div>
     <label for="title">Title:</label>
@@ -16,10 +18,10 @@
   </div>
 
   <div>
-  <select name="" id="">
-    @foreach($categories as $category)
-    <option value="{{ $category->id }}">{{ $category->name }}</option>
-    @endforeach
+    <select name="" id="">
+      @foreach($categories as $category)
+      <option value="{{ $category->id }}">{{ $category->name }}</option>
+      @endforeach
     </select>
   </div>
 

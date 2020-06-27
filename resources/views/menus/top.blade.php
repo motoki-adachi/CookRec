@@ -35,17 +35,17 @@
     <!-- #######################################新着############################################## -->
     <div class="main-wrapper__left__box">
       <p class="main-wrapper__left__box--icon">新着レシピ</p>
-      @foreach($menus as $menu)
       <div class="main-wrapper__left__box--contents">
+        @foreach($menus as $menu)
         <div class="main-wrapper__left__box--contents--item">
           <div class="image">
-            <img src="{{ $menu->image }}" alt="">
+            <img src="{{ asset('/storage/img/'.$menu->image) }}" alt="NoImage">
           </div>
           <p class="title">{{ $menu->title }}</p>
-          <p class="user">作成者</p>
+          <p class="user">{{ $menu->User->name }}</p>
         </div>
+        @endforeach
       </div>
-      @endforeach
       <div class="main-wrapper__left__box--link">
         <a href="#">もっと見る→</a>
       </div>
@@ -129,20 +129,20 @@
   <div class="main-wrapper__right">
     <div class="main-wrapper__right--category">
       @foreach($categories as $category)
-        <p class="main-wrapper__right--category--title"><a href="#">{{ $category->name }}</a></p>
-        <div class="main-wrapper__right--category--contents">
-          @foreach($sub_categories as $sub_category)
-            @foreach($sub_category as $data)
-              @if($data->category_id == $category->id)
-              <div class="main-wrapper__right--category--contents--sub">
-                <div class="main-wrapper__right--category--contents--sub--item">
-                  <a href="#">{{ $data->name }}</a>
-                </div>
-              </div>
-              @endif
-            @endforeach
-          @endforeach
+      <p class="main-wrapper__right--category--title"><a href="#">{{ $category->name }}</a></p>
+      <div class="main-wrapper__right--category--contents">
+        @foreach($sub_categories as $sub_category)
+        @foreach($sub_category as $data)
+        @if($data->category_id == $category->id)
+        <div class="main-wrapper__right--category--contents--sub">
+          <div class="main-wrapper__right--category--contents--sub--item">
+            <a href="#">{{ $data->name }}</a>
+          </div>
         </div>
+        @endif
+        @endforeach
+        @endforeach
+      </div>
       @endforeach
     </div>
     <div class="main-wrapper__right--opinion">

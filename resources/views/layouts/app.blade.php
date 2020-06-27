@@ -25,7 +25,7 @@
     <header>
         <div class="header">
             <div class="header__left">
-                <a href="#">サービス一覧</a>
+                <a href="/">サービス一覧</a>
             </div>
             <div class="header__right">
                 <div class="header__right--contents">

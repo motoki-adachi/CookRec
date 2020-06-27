@@ -1,113 +1,114 @@
-.main{
-  width: 100vw;
-  height: 1500px;
-  background-color: rgb(193, 234, 250);
-  .top-wrapper{border-bottom: 1px solid #000;
-    height: 100px;
-    width: 70%;
-    margin: 0 auto;
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    &__left{
-      width: 20%;
-      &--logo{
-        font-size: 40px;
-        color: blue;
-      }
-    }
-    &__center{
-      width: 30%;
-      &--search{
-        width: 400px;
-        .recipe-search{
-          width: 70%;
-        }
-      }
-      &--content{
-        font-size: 13px;
-      }
-    }
-    &__right{
-      width: 30%;
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  .main-wrapper{
-    height: auto;
-    width: 70%;
-    margin: 0 auto;
-    padding-top: 30px;
-    display: flex;
-    &__left{
-      width: 65%;
-      height: 100%;
-      margin: 10px;
-      border-radius: 15px;
-      background-color: #fff;
-
-      &__box{
-        height: 350px;
-        margin-bottom: 20px;
-        &--icon{
-          font-size: 25px;
-          text-align: center;
-          padding-top: 10px;
-        }
-        &--contents{
-          height: 80%;
-          display: flex;
-          justify-content: space-between;
-          margin: 0 15px;
-          &--item{
-            cursor: pointer;
-            height: 90%;
-            width: 30%;
-            border: 1px solid rgb(65, 161, 250);
-            margin: 15px;
-            box-shadow: 2px 2px 4px gray;
-          }
-        }
-        &--link{
-          float: right;
-          margin: 0 10px 20px 0;
-        }
-      }
-    }
-    &__right{
-      width: 35%;
-      height: 1000px;
-      margin: 10px;
-      border-radius: 15px;
-      background-color: #fff;
-      &--category{
-        height: 700px;
-        overflow: scroll;
-        &--title{
-          text-align: center;
-          margin: 8px;
-        }
-        &--contents{
-          margin-bottom: 10px;
-          padding-left: 15px;
-          &--sub{
-            font-size: 15px;
-            a{
-              color: rgb(119, 243, 233);
+.main {
+    width: 100vw;
+    height: 1500px;
+    background-color: rgb(193, 234, 250);
+    .top-wrapper {
+        border-bottom: 1px solid #000;
+        height: 100px;
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        &__left {
+            width: 20%;
+            &--logo {
+                font-size: 40px;
+                color: blue;
             }
-          }
         }
-      }
-      &--opinion{
-        background-color: rgb(22, 22, 223);
-        height: 20%;
-      }
-      &--contact{
-        background-color: rgb(187, 86, 162);
-        height: 10%;
-      }
+        &__center {
+            width: 30%;
+            &--search {
+                width: 400px;
+                .recipe-search {
+                    width: 70%;
+                }
+            }
+            &--content {
+                font-size: 13px;
+            }
+        }
+        &__right {
+            width: 30%;
+            display: flex;
+            align-items: center;
+        }
     }
-  }
+
+    .main-wrapper {
+        height: auto;
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 30px;
+        display: flex;
+        &__left {
+            width: 65%;
+            height: 100%;
+            margin: 10px;
+            border-radius: 15px;
+            background-color: #fff;
+
+            &__box {
+                height: 350px;
+                margin-bottom: 20px;
+                &--icon {
+                    font-size: 25px;
+                    text-align: center;
+                    padding-top: 10px;
+                }
+                &--contents {
+                    height: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 15px;
+                    &--item {
+                        cursor: pointer;
+                        height: 90%;
+                        width: 30%;
+                        border: 1px solid rgb(65, 161, 250);
+                        margin: 15px;
+                        box-shadow: 2px 2px 4px gray;
+                    }
+                }
+                &--link {
+                    float: right;
+                    margin: 0 10px 20px 0;
+                }
+            }
+        }
+        &__right {
+            width: 35%;
+            height: 1000px;
+            margin: 10px;
+            border-radius: 15px;
+            background-color: #fff;
+            &--category {
+                height: 700px;
+                overflow: scroll;
+                &--title {
+                    text-align: center;
+                    margin: 8px;
+                }
+                &--contents {
+                    margin-bottom: 10px;
+                    padding-left: 15px;
+                    &--sub {
+                        font-size: 15px;
+                        a {
+                            color: rgb(119, 243, 233);
+                        }
+                    }
+                }
+            }
+            &--opinion {
+                background-color: rgb(22, 22, 223);
+                height: 20%;
+            }
+            &--contact {
+                background-color: rgb(187, 86, 162);
+                height: 10%;
+            }
+        }
+    }
 }
